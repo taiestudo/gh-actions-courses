@@ -19,6 +19,6 @@ jobs:
 
       - name: Install Dependencies
         run: npm ci
-        
+
       - name: Run Unit Tests
         run: rpm run test
