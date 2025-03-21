@@ -1,2 +1,2 @@
 # gh-actions-courses
-test
+Hello, welcome to my GitHub Actions exercicises
