@@ -1,7 +1,5 @@
-name: 04 -  Using Actions
-on:
-    push:
-    workflow_dispatch:
+name: 06-  Contexts
+on: push
 
 jobs:
    echo-data:
