@@ -23,6 +23,6 @@ jobs:
         if: inputs.debug == 'true' && github.ref == 'refs/heads/main'
         run: echo "I was triggered from main"
       - name: Greeting
-        run: "Hello, world"
+        run: echo "Hello, world"
 
                     
