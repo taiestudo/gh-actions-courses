@@ -28,7 +28,7 @@ jobs:
       - name: Overwrite Job Variable
         env:
          OVERWRITTEN: 'I have been overwritten at the step level'
-        run:
+        run: echo "hi"
 
 
 
