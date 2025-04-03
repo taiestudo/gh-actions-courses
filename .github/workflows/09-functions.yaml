@@ -8,11 +8,9 @@ jobs:
     echo1:
         runs-on: ubuntu-latest
         steps:
-         - name: Failing step
-           run: exit 1
          - name: Print PR
            if: github.event_name == 'pull_request'
-           run: echo ${{ github.event_name }}
+           run: echo ${{ github.event.pull_request.title }}
          - name: Print PR labels
            run: |
                 cat << EOF
@@ -23,6 +21,8 @@ jobs:
            run: echo "I am a bug fix"
          - name: Sleep for 20 seconds
            run: sleep 20
+         - name: Failing step
+           run: exit 1
          - name: I will be skipped
            if: ${{ success() }}
            run: echo "I will print if previous steps succeed."
