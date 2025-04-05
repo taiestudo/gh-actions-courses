@@ -1,10 +1,11 @@
 name: 13 - Using Caching
 on:
-  dispatch_workflow:
+  workflow_dispatch:
     inputs:
-    type: boolean
-    description: Whether to execute cache step
-    default: true
+     cache: 
+      type: boolean
+      description: Whether to execute cache step
+      default: true
   
 jobs:
   build:
