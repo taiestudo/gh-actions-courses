@@ -6,7 +6,7 @@ on:
     description: Whether to execute cache step
     default: true
   
-job:
+jobs:
   build:
     runs-on: ubuntu-latest
     defaults:
